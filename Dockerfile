@@ -3,6 +3,8 @@
 # Usa uma imagem base com Node
 FROM node:18
 
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 # Cria diretório da app
 WORKDIR /app
 
